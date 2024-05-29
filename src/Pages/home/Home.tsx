@@ -7,12 +7,12 @@ const Home = () => {
   return (
     <div>
    <Navbar />
-   <div className="relative h-screen">
-    <div className="absolute pt-[150px] pb-20 object-cover  w-full ">
-      {/* <img src={teamsbg} alt="" className="object-cover absolute w-full h-screen" /> */}
+   <div className="relative h-full ">
+    <div className="  pb-20 object-cover h-full w-full ">
+      <img src="/images/bg.jpg" alt="" className="object-cover absolute w-full h-full" />
       <div className="max-w-screen-xl px-5 lg:px-14  mx-auto lg:gap-8 xl:gap-12 ">
       <div className="flex flex-col gap-2  h-full text-white">
-        <h4 className="text-white  z-10 text-[30px] md:text-[45px] font-[600]">You're Welcome</h4>
+        <h4 className="text-white pt-[150px] z-10 text-[30px] md:text-[45px] font-[600]">You're Welcome</h4>
         <div className='bg-amber-400 z-10 h-[6px] w-[180px] md:w-[270px]'></div>
         {activeText === 'welcome' ? (
           <div className='z-10'>
@@ -37,20 +37,7 @@ Our friendly staff members are available night or day to assist you.
 <br/>
 To get to know more information about us
       </h4>
-      
-      <div className='flex items-center pt-4 gap-4'>
-<div>
-<Link to="/catalog" className='bg-amber-400 rounded-full px-1 md:px-3 md:py-3 py-2'>
-  Homey Catalog
-</Link>
-  </div>
-
-  <div>
-<button className='bg-amber-400 rounded-full md:px-5 md:py-3 px-3 py-2'>
-Contact us
-</button>
-  </div>
-        </div>
+     
 
             </div>
         ) : ''}
@@ -59,7 +46,7 @@ Contact us
 
 
         {activeText === 'welcome' ? (
-              <div className='flex gap-3 pt-8'>
+              <div className='flex gap-3  pt-8'>
   <div onClick={() => setActiveText('welcome')} className='bg-amber-400 rounded-full  z-10 h-[4px] cursor-pointer w-[100px] md:w-[150px]'></div>
       <div onClick={() => setActiveText('another')} className='border border-amber-400 rounded-full cursor-pointer z-10 h-[4px] w-[100px] md:w-[150px]'></div>
 
@@ -72,9 +59,27 @@ Contact us
                     </div> 
         )}
     
- 
+  
+    <div className='flex justify-between md:justify-start z-10 items-center pt-7 gap-1 md:gap-4'>
+<div className='z-10'>
+<Link to="/catalog" className='bg-amber-400 rounded-full md:px-3 px-1 md:py-3 py-2'>
+  Homey Catalog
+</Link>
+  </div>
+
+  <div className='z-10'>
+<button className='bg-amber-400 rounded-full md:px-5 px-3 md:py-3  py-2'>
+Contact us
+</button>
+  </div>
+  <div className='z-10'>
+<button className='bg-amber-400 rounded-full md:px-5 px-3 md:py-3  py-2'>
+Amenities
+</button>
+  </div>
+        </div>
       </div>
-      <div className="overlay absolute inset-0 bg-black opacity-70"></div>
+      <div className="overlay  absolute inset-0 bg-black opacity-70"></div>
     </div>
   </div>
     </div>

@@ -6,12 +6,12 @@ const CatalogItemPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="relative ">
-    <div className="absolute md:pt-[130px] pt-[100px] pb-20 object-cover w-full ">
-      {/* <img src={teamsbg} alt="" className="object-cover absolute w-full h-screen" /> */}
+      <div className="relative h-full ">
+    <div className="h-full  pb-20 object-cover w-full ">
+      <img src="/images/bg.jpg" alt="" className="object-cover absolute w-full h-full" />
       <div className="max-w-screen-xl px-3 lg:px-14  mx-auto lg:gap-8 xl:gap-12 ">
       <div className="flex flex-col gap-2  h-full text-white">
-        <h4 className="text-amber-400  z-10 text-[30px] md:text-[45px] font-[600]">Food Vendor</h4>
+        <h4 className="text-amber-400 md:pt-[130px] pt-[100px] z-10 text-[30px] md:text-[45px] font-[600]">Food Vendor</h4>
         {/* <div className='bg-amber-400 z-10 h-[6px] w-[180px] md:w-[270px]'></div> */}
     
    
